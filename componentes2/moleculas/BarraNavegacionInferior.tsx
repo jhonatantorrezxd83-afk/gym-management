@@ -9,7 +9,12 @@ export default function BarraNavegacionInferior() {
         <span>Members</span>
       </Link>
       <Link href="/" className="barra-inferior__item">
-        <img src="/lineas.svg" alt="Dashboard" width={20} height={20} />
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 3v18h18" />
+          <path d="M7 16v-4" />
+          <path d="M12 16v-8" />
+          <path d="M17 16v-5" />
+        </svg>
         <span>Dashboard</span>
       </Link>
       <div className="barra-inferior__item">

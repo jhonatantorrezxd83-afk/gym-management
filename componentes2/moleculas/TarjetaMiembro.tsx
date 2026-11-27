@@ -4,6 +4,7 @@ import "./TarjetaMiembro.css";
 
 export interface Miembro {
   id: number;
+  apiId?: string;
   nombre: string;
   foto: string;
   expiracion: string;
@@ -12,12 +13,20 @@ export interface Miembro {
 
 interface TarjetaMiembroProps {
   miembro: Miembro;
+  onEliminar?: (id: number) => void;
 }
 
-export default function TarjetaMiembro({ miembro }: TarjetaMiembroProps) {
+export default function TarjetaMiembro({
+  miembro,
+  onEliminar,
+}: TarjetaMiembroProps) {
   return (
     <article className="tarjeta-miembro">
-      <button className="tarjeta-miembro__borrar" title="Eliminar">
+      <button
+        className="tarjeta-miembro__borrar"
+        title="Eliminar"
+        onClick={() => onEliminar?.(miembro.id)}
+      >
         <img src="/basurero.svg" alt="Eliminar" width={13} height={13} />
       </button>
 
@@ -45,7 +54,7 @@ export default function TarjetaMiembro({ miembro }: TarjetaMiembroProps) {
       <div className="tarjeta-miembro__acciones">
         <BotonAccionMiembro icono="/llamada.svg" etiqueta="Call" />
         <BotonAccionMiembro icono="/whatsap.svg" etiqueta="WhatsApp" />
-        <BotonAccionMiembro icono="/update.svg" etiqueta="Renew" />
+        <BotonAccionMiembro esRenew etiqueta="Renew Plan" />
         <BotonAccionMiembro icono="/mensaje.svg" etiqueta="Message" />
         <BotonAccionMiembro icono="/prohibido.svg" etiqueta="Block" />
       </div>

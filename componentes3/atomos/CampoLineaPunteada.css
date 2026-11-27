@@ -14,6 +14,7 @@
 
 .campo-linea__input {
   flex: 1;
+  min-width: 0;
   background: transparent;
   border: none;
   border-bottom: 1px dotted #94d20f;

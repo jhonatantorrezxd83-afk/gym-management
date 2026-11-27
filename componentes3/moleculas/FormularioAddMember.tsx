@@ -10,12 +10,15 @@ import GrupoMedidas from "./GrupoMedidas";
 import GrupoFechaIngreso from "./GrupoFechaIngreso";
 import "./FormularioAddMember.css";
 
+const API_URL = "https://6b091b5b6a4ecd58b006ec11.mockapi.io/api/v1/miembros";
+
 export default function FormularioAddMember() {
   const router = useRouter();
   const [guardado, setGuardado] = useState(false);
   const [form, setForm] = useState({
     name: "",
     photo: "",
+    photoData: "",
     mobile: "",
     gender: "Male",
     memberNo: "12",
@@ -41,12 +44,42 @@ export default function FormularioAddMember() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setGuardado(true);
-    setTimeout(() => {
-      router.push("/members");
-    }, 800);
+    if (!form.name.trim()) {
+      alert("Ingresa el nombre del miembro.");
+      return;
+    }
+
+    try {
+      const respuesta = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nombre: form.name,
+          foto: form.photoData || "/01_persona_1.png",
+          expiracion: form.fechaFin || "01 Oct 2023",
+          deuda: Number(form.dueAmount) || 0,
+          mobile: form.mobile,
+          gender: form.gender,
+          training: form.training,
+          plan: form.plan,
+          batchTime: form.batchTime,
+          paymentMethod: form.paymentMethod,
+        }),
+      });
+
+      if (respuesta.ok) {
+        setGuardado(true);
+        setTimeout(() => {
+          router.push("/members");
+        }, 700);
+      } else {
+        alert("No se pudo guardar en MockAPI.");
+      }
+    } catch {
+      alert("Error de conexión con MockAPI.");
+    }
   };
 
   return (
@@ -60,7 +93,9 @@ export default function FormularioAddMember() {
 
       <BotonUpload
         nombreArchivo={form.photo}
-        onFileChange={(nombre) => setForm({ ...form, photo: nombre })}
+        onFileChange={(nombre, base64) =>
+          setForm({ ...form, photo: nombre, photoData: base64 })
+        }
       />
 
       <CampoLineaPunteada

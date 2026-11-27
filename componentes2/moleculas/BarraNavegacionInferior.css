@@ -1,8 +1,7 @@
 .barra-inferior {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
-  max-width: 412px;
   background-color: #2f2b2b;
   display: flex;
   justify-content: space-around;
@@ -22,8 +21,4 @@
 
 .barra-inferior__item--activo {
   color: #94d20f;
-}
-
-.barra-inferior__icono {
-  font-size: 16px;
 }

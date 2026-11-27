@@ -1,7 +1,9 @@
 .boton-flotante {
-  position: fixed;
+  position: sticky;
   bottom: 72px;
-  right: calc(50% - 190px);
+  align-self: flex-end;
+  margin-right: 16px;
+  margin-bottom: 12px;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -14,10 +16,4 @@
   justify-content: center;
   box-shadow: 0 4px 12px rgba(255, 0, 0, 0.45);
   z-index: 20;
-}
-
-@media (max-width: 412px) {
-  .boton-flotante {
-    right: 16px;
-  }
 }

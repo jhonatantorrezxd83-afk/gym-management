@@ -4,9 +4,10 @@
   color: #94d20f;
   border: 1px solid #94d20f;
   border-radius: 8px;
-  padding: 6px 8px;
-  font-size: 11px;
+  padding: 6px 6px;
+  font-size: 10px;
   font-weight: 500;
+  white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: space-between;
