@@ -1,0 +1,27 @@
+.input-busqueda {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #000000;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.input-busqueda__icono {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.input-busqueda__campo {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 13px;
+  width: 100%;
+}
+
+.input-busqueda__campo::placeholder {
+  color: #d0d0d0;
+}

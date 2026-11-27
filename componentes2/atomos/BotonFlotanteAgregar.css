@@ -1,0 +1,23 @@
+.boton-flotante {
+  position: fixed;
+  bottom: 72px;
+  right: calc(50% - 190px);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.45);
+  z-index: 20;
+}
+
+@media (max-width: 412px) {
+  .boton-flotante {
+    right: 16px;
+  }
+}

@@ -1,0 +1,42 @@
+.tarjeta-miembro {
+  background-color: #050505;
+  border: 1px solid #94d20f;
+  border-radius: 10px;
+  padding: 10px 8px 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarjeta-miembro__borrar {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tarjeta-miembro__datos {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.tarjeta-miembro__label {
+  color: #94d20f;
+}
+
+.tarjeta-miembro__valor {
+  color: #ffffff;
+}
+
+.tarjeta-miembro__acciones {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #181515;
+  padding-top: 6px;
+}

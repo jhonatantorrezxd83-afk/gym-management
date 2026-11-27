@@ -1,0 +1,16 @@
+.boton-accion {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.boton-accion__texto {
+  font-size: 7px;
+  color: #94d20f;
+}

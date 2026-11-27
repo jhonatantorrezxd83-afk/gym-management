@@ -1,0 +1,12 @@
+.vista-miembros {
+  min-height: 100vh;
+  background-color: #000000;
+  padding-bottom: 80px;
+}
+
+.vista-miembros__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 8px 12px;
+}
