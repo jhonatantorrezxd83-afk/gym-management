@@ -1,0 +1,13 @@
+.formulario-miembro {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px 16px 28px;
+}
+
+.formulario-miembro__mensaje {
+  color: #94d20f;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 6px;
+}

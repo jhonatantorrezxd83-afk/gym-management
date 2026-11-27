@@ -1,0 +1,29 @@
+.grupo-fecha {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.grupo-fecha__label {
+  color: #94d20f;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.grupo-fecha__input {
+  width: 78px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  outline: none;
+}
+
+.grupo-fecha__to {
+  color: #94d20f;
+  font-size: 13px;
+  font-weight: 500;
+}

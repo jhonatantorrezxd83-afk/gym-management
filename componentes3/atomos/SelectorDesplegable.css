@@ -1,0 +1,25 @@
+.selector-desplegable {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.selector-desplegable__label {
+  color: #94d20f;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.selector-desplegable__select {
+  flex: 1;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 13px;
+  padding: 4px 2px;
+  outline: none;
+  cursor: pointer;
+}

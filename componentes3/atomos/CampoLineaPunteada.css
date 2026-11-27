@@ -1,0 +1,28 @@
+.campo-linea {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.campo-linea__label {
+  color: #94d20f;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.campo-linea__input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dotted #94d20f;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 2px 4px;
+  outline: none;
+}
+
+.campo-linea__input::placeholder {
+  color: #888888;
+}

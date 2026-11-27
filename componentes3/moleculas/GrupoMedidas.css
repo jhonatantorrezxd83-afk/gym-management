@@ -1,0 +1,38 @@
+.grupo-medidas {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.grupo-medidas__label {
+  color: #94d20f;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+.grupo-medidas__grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 10px;
+}
+
+.grupo-medidas__item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #94d20f;
+}
+
+.grupo-medidas__input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dotted #94d20f;
+  color: #ffffff;
+  font-size: 11px;
+  outline: none;
+}

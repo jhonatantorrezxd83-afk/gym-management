@@ -1,0 +1,30 @@
+.campo-upload {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.campo-upload__label {
+  color: #94d20f;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.campo-upload__boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 4px 18px;
+  color: #94d20f;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #050505;
+}
+
+.campo-upload__input {
+  display: none;
+}

@@ -1,0 +1,18 @@
+.boton-guardar {
+  background-color: #050505;
+  color: #94d20f;
+  border: 1.5px solid #94d20f;
+  border-radius: 16px;
+  padding: 6px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  margin: 14px auto 0;
+  box-shadow: 0 3px 10px rgba(148, 210, 15, 0.35);
+  transition: transform 0.15s ease;
+}
+
+.boton-guardar:hover {
+  transform: scale(1.03);
+}

@@ -1,0 +1,32 @@
+.selector-radio {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.selector-radio__label {
+  color: #94d20f;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.selector-radio__opciones {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.selector-radio__opcion {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #94d20f;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.selector-radio__opcion input {
+  accent-color: #94d20f;
+  cursor: pointer;
+}
