@@ -1,0 +1,21 @@
+.cabecera-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 16px 18px;
+  gap: 10px;
+}
+
+.cabecera-plan__titulo {
+  color: #94d20f;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cabecera-plan__subtitulo {
+  color: #94d20f;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.9;
+}

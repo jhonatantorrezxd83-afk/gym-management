@@ -1,0 +1,13 @@
+.vista-select-plan {
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 0 18px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vista-select-plan__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}

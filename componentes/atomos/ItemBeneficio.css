@@ -1,0 +1,14 @@
+.item-beneficio {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: #f8f8f8;
+  line-height: 1.4;
+}
+
+.item-beneficio__estrella {
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 1px;
+}

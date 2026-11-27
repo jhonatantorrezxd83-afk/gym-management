@@ -1,0 +1,25 @@
+.logo-gimnasio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #0d0c0c;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+  flex-shrink: 0;
+}
+
+.logo-gimnasio--lg {
+  width: 72px;
+  height: 72px;
+  font-size: 10px;
+}
+
+.logo-gimnasio--sm {
+  width: 34px;
+  height: 34px;
+  font-size: 6px;
+}
