@@ -11,7 +11,7 @@ export default function BotonAccionMiembro({
 }: BotonAccionMiembroProps) {
   return (
     <button className="boton-accion" title={etiqueta}>
-      <span>{icono}</span>
+      <img src={icono} alt={etiqueta} width={15} height={15} />
       <span className="boton-accion__texto">{etiqueta}</span>
     </button>
   );

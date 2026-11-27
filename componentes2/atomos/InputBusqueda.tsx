@@ -9,7 +9,7 @@ interface InputBusquedaProps {
 export default function InputBusqueda({ valor, onChange }: InputBusquedaProps) {
   return (
     <div className="input-busqueda">
-      <span className="input-busqueda__icono">🔍</span>
+      <img src="/lupa.svg" alt="Buscar" width={16} height={16} />
       <input
         type="text"
         className="input-busqueda__campo"

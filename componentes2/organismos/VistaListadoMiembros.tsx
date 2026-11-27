@@ -8,12 +8,12 @@ import BarraNavegacionInferior from "../moleculas/BarraNavegacionInferior";
 import "./VistaListadoMiembros.css";
 
 const MIEMBROS_INICIALES: Miembro[] = [
-  { id: 1, nombre: "Robert Fox", expiracion: "01 Sep 2023", deuda: 0 },
-  { id: 2, nombre: "Jacob Jones", expiracion: "15 Sep 2023", deuda: 0 },
-  { id: 3, nombre: "Rose Bell", expiracion: "01 Sep 2023", deuda: 0 },
-  { id: 4, nombre: "Albert Flores", expiracion: "10 Sep 2023", deuda: 0 },
-  { id: 5, nombre: "Kristin Watson", expiracion: "01 Sep 2023", deuda: 0 },
-  { id: 6, nombre: "Jenny Wilson", expiracion: "12 Sep 2023", deuda: 0 },
+  { id: 1, nombre: "Robert Fox", foto: "/01_persona_1.png", expiracion: "01 Sep 2023", deuda: 0 },
+  { id: 2, nombre: "Jacob Jones", foto: "/02_persona_2.png", expiracion: "15 Sep 2023", deuda: 0 },
+  { id: 3, nombre: "Rose Bell", foto: "/03_persona_3.png", expiracion: "01 Sep 2023", deuda: 0 },
+  { id: 4, nombre: "Albert Flores", foto: "/04_persona_4.png", expiracion: "10 Sep 2023", deuda: 0 },
+  { id: 5, nombre: "Kristin Watson", foto: "/rostro_nitido.png", expiracion: "01 Sep 2023", deuda: 0 },
+  { id: 6, nombre: "Jenny Wilson", foto: "/03_persona_3.png", expiracion: "12 Sep 2023", deuda: 0 },
 ];
 
 export default function VistaListadoMiembros() {

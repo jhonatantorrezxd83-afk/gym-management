@@ -5,6 +5,7 @@ import "./TarjetaMiembro.css";
 export interface Miembro {
   id: number;
   nombre: string;
+  foto: string;
   expiracion: string;
   deuda: number;
 }
@@ -17,10 +18,10 @@ export default function TarjetaMiembro({ miembro }: TarjetaMiembroProps) {
   return (
     <article className="tarjeta-miembro">
       <button className="tarjeta-miembro__borrar" title="Eliminar">
-        🗑
+        <img src="/basurero.svg" alt="Eliminar" width={13} height={13} />
       </button>
 
-      <AvatarMiembro nombre={miembro.nombre} />
+      <AvatarMiembro nombre={miembro.nombre} foto={miembro.foto} />
 
       <div className="tarjeta-miembro__datos">
         <p>
@@ -42,11 +43,11 @@ export default function TarjetaMiembro({ miembro }: TarjetaMiembroProps) {
       </div>
 
       <div className="tarjeta-miembro__acciones">
-        <BotonAccionMiembro icono="📞" etiqueta="Call" />
-        <BotonAccionMiembro icono="💬" etiqueta="WhatsApp" />
-        <BotonAccionMiembro icono="↻" etiqueta="Renew" />
-        <BotonAccionMiembro icono="✉" etiqueta="Message" />
-        <BotonAccionMiembro icono="⊘" etiqueta="Block" />
+        <BotonAccionMiembro icono="/llamada.svg" etiqueta="Call" />
+        <BotonAccionMiembro icono="/whatsap.svg" etiqueta="WhatsApp" />
+        <BotonAccionMiembro icono="/update.svg" etiqueta="Renew" />
+        <BotonAccionMiembro icono="/mensaje.svg" etiqueta="Message" />
+        <BotonAccionMiembro icono="/prohibido.svg" etiqueta="Block" />
       </div>
     </article>
   );

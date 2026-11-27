@@ -7,13 +7,7 @@ interface LogoGimnasioProps {
 export default function LogoGimnasio({ size = "lg" }: LogoGimnasioProps) {
   return (
     <div className={`logo-gimnasio logo-gimnasio--${size}`}>
-      <span>
-        TRAINING
-        <br />
-        ⚡
-        <br />
-        CENTER
-      </span>
+      <img src="/Group 11.png" alt="Logo Gimnasio" />
     </div>
   );
 }
